@@ -1,0 +1,24 @@
+# Vim junk
+*~
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+
+# Compiled languages junk (C/C++, CUDA, Fortran, and make output mostly)
+*.so
+*.o
+*.a
+*.la
+*.pdb
+*.mod
+*.ptx 
+*.cubin
+
+# Python junk
+__pycache__/
+*.py[cod]
+*.egg
+docs/_build/
+*.ipynb_checkpoints
