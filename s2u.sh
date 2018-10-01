@@ -14,10 +14,9 @@
 # replace all spaces in filenames with underscores.
 # only applies to files in this directory
 for f in *; do
-    echo 'f: ' ${f}
-    echo 'frep: ' ${f/\ /_}
-    
+    #Use bash's regex match operator =~,
+    #only try to rename if there's a space in the filename.
     if [[ "${f}" =~ .*\ .* ]]; then
-        mv "${f}" ${f/\ /_}
+        mv "${f}" ${f// /_}
     fi
 done
